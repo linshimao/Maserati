@@ -1,0 +1,22 @@
+.nav {
+  color: black;
+  border-bottom: 1px solid #fff;
+  font-size: 1.2em;
+  z-index: 999;
+  position: absolute;
+  bottom: 50px;
+  margin-left: 100px; }
+  .nav li {
+    float: left; }
+    .nav li a {
+      display: block;
+      width: 100px;
+      color: #fff;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      margin: 0 2px; }
+      .nav li a:hover {
+        background: rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=navbar.css.map */
