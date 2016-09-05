@@ -1,0 +1,47 @@
+.scrollWall{
+    background: #369;
+    overflow: hidden;
+    position: relative;
+    .imgs{
+        position: absolute;
+        li{
+            float: left;
+        }
+    }
+}
+#s-img1{
+    background: url(../images/110040M_crop.jpg);
+    background-size: cover;
+}
+#s-img2{
+    background: url(../images/56c1a19a856b8.jpg);
+    background-size: cover;
+}
+#s-img3{
+    background: url(../images/120000M.jpg);
+    background-size: cover;
+}
+#s-img4{
+    background: url(../images/120550M.jpg);
+    background-size: cover;
+}
+.scrollbtn{
+    width: 50px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    z-index: 999;
+    color: aliceblue;
+    background: rgba(0,0,0,.5);
+    cursor: pointer;
+    
+}
+#nextbtn{
+    right: 0;
+    margin-right: 100px;
+}
+#prebtn{
+    margin-left: 100px;
+}

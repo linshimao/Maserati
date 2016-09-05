@@ -1,0 +1,46 @@
+.part1 {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  img {
+    width: 450px;
+    border-radius: 50%;
+    float: left;
+  }
+  div {
+    position: relative;
+    float: left;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 450px;
+    padding-bottom: 4em;
+    h3 {
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    p {
+      line-height: 2em;
+      font-size: 14px;
+    }
+    a {
+      position: absolute;
+      right: 3em;
+      bottom: 10px;
+      width: 100px;
+      height: 2em;
+      line-height: 2em;
+      background: #C43E3E;
+      display: block;
+      border-radius: 4px;
+      color: #fff;
+      margin-top: 2em;
+      letter-spacing: 2px;
+      text-align: center;
+      font-size: 14px;
+      &:hover {
+        background: #ba1c1c;
+      }
+      ;
+    }
+  }
+}
