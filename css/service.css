@@ -1,0 +1,30 @@
+* { margin: 0; padding: 0; }
+
+a { text-decoration: none; color: #fff; }
+
+ul { list-style-type: none; }
+
+body { padding-top: 50px; background: #F0F0F0; font-family: "MicroSoft YaHei"; }
+
+.clear { zoom: 1; }
+.clear:after { height: 0; visibility: hidden; content: ''; clear: both; display: block; }
+
+.header { position: fixed; z-index: 999; background: #333; width: 100%; min-width: 1000px; height: 50px; background: #333; margin-top: -50px; overflow: hidden; }
+.header .logo { background: url(../images/logo.png) center; background-size: cover; display: block; width: 82px; height: 36px; margin-top: 5px; margin-right: 50px; }
+.header input { margin-top: 15px; }
+.header .search { float: right; margin-right: 5em; }
+.header #s-in { width: 200px; height: 25px; line-height: 25px; border: none; background: #666; color: #b8b8b8; text-indent: 16px; outline: none; }
+.header #s-button { border: none; width: 65px; height: 25px; background: #225181; cursor: pointer; color: #c2c1c1; margin-left: -5px; }
+.header .nav { float: left; padding-left: 100px; }
+.header .nav li { float: left; }
+.header .nav li a { display: block; padding: 0 1em; text-align: center; height: 50px; line-height: 50px; color: #fff; font-size: 18px; }
+
+.childFooter { margin-top: 50px; height: 100px; background: #333; }
+.childFooter img { width: 100px; height: 100px; display: block; margin: 0 auto; margin-top: 30px; }
+
+.container { width: 1000px; margin: 0 auto; }
+.container h3 { padding-top: 20px; font-weight: 100; font-size: 3em; }
+.container .text { width: 100%; height: 400px; }
+.container .text h4 { padding-top: 30px; font-size: 26px; font-weight: 100; color: #6b6e6d; }
+.container .text p { line-height: 2em; font-size: 16px; color: #6d7379; margin-top: 10px; }
+.container img { width: 100%; }

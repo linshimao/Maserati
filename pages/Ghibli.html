@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="../css/ghibli.css">
+    <script src="../js/jquery.js"></script>
+    <script>
+    $(function() {
+        $("#s-button").on("click", function() {
+            if (!$("#s-in").val()) {
+                alert("搜索内容不能为空");
+                return false;
+            }
+            window.location.href = "result.html";
+        });
+        $("#s-in").on('blur', function(event) {
+            if(!$(this).val()){
+                $(this).val("站内搜索");
+            }
+        })
+        .on('focus', function(event) {
+            $(this).val("");
+        });;
+    });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul class="clear">
+                <li class="logo">
+                    <a href="../index.html"> </a>
+                </li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href=Cars.html>车型</a></li>
+                <li><a href="news.html">新闻</a></li>
+                <li><a href="service.html">售后服务</a></li>
+                <li><a href="contactUs.html">联系我们</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="s-in" value="站内搜索">
+            <input type="button" value="搜 索" id="s-button">
+        </div>
+    </div>
+    <div class="container">
+        <img src="../images/cars-1.jpg" alt="">
+        <h4>Ghibli--主要配置参数</h4>
+        <ul class="config clear">
+            <li><span class="distance">长度:</span>4971 毫米</li>
+            <li><span class="distance">宽度:</span> (不含后视镜)1945 毫米</li>
+            <li><span class="distance">宽度:</span>(含后视镜)2100 毫米</li>
+            <li><span class="distance">高度:</span>1461 毫米</li>
+            <li><span class="distance">轴距:</span>2998 毫米</li>
+            <li><span class="distance">前轮距:</span>1635 毫米</li>
+            <li><span class="distance">后轮距:</span>1653 毫米</li>
+            <li><span class="distance">排量:</span>2979 毫升</li>
+        </ul>
+        <h4>Ghibli--详细配置参数</h4>
+        <ul class="config clear">
+            <li><span class="distance">引擎布局</span>V6</li>
+            <li><span class="distance">排量:</span>2979毫升</li>
+            <li><span class="distance">压缩率:</span>9,7:1</li>
+            <li><span class="distance">最大功率:</span>410 马力</li>
+            <li><span class="distance">最大功率 (rpm):</span>5500 rpm</li>
+            <li><span class="distance">牵引力:</span>AWD</li>
+            <li><span class="distance">最大扭矩:</span>550 Nm</li>
+            <li><span class="distance">最大扭矩转速(rpm):</span>1750-5000</li>
+        </ul>
+        <div class="in clear">
+            <img src="../images/new-ghibli-rosso_1.jpg" alt="">
+            <h5>尊享舒适</h5>
+            <p>Ghibli内每一处细节都彰显出功能与风格的完美结合，采用卓越设计和顶级材质，打造极致舒适体验。座椅采用包裹式设计，尽显澎湃动力。前排座椅采用全电动调节系统，确保驾驶者始终处于最佳坐姿</p>
+            <h5>极致非凡，激越人心</h5>
+            <p>玛莎拉蒂Ghibli天生激越澎湃、震撼人心。简洁流畅的线条和饱满动感的外观出众夺目，激发无限想象。修长的发动机罩下蕴藏着强悍动力，前格栅设计和标志性三叉戟车标傲然彰显纯正的玛莎拉蒂血统。</p>
+        </div>
+        <div class="in clear">
+            <img src="../images/new-ghibli-rosso_2.jpg" alt="">
+            <h5>极致奢华</h5>
+            <p>仪表盘和中控台线条优雅流畅，与细腻柔软的皮革内饰相得益彰，营造高贵奢华的内部空间。若要彰显个性，可为车舱内的侧面板和车门面板选用优质皮革装饰，组合出动感的双色搭配，演绎非凡奢华。</p>
+            <h5>性能卓越，完美操控</h5>
+            <p>Ghibli反应灵活敏捷，迅速响应每一次驾驶指令。从8速变速箱到V6双涡轮增压发动机，每一处细节均精心打造，只为成就卓越性能，营造极致驾驶乐趣。</p>
+        </div>
+        <!--    <a href="#" onclick="submit()">立 即 预 约 试 驾</a>-->
+    </div>
+    <!--底部-->
+    <div class="childFooter">
+        <img src="../images/about-foot.png" alt="">
+    </div>
+    <!--底部-->
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Levante</title>
+    <link rel="stylesheet" href="../css/ghibli.css">
+    <script src="../js/jquery.js"></script>
+    <script>
+    $(function() {
+        $("#s-button").on("click", function() {
+            if (!$("#s-in").val()) {
+                alert("搜索内容不能为空");
+                return false;
+            }
+            window.location.href = "result.html";
+        });
+        $("#s-in").on('blur', function(event) {
+            if(!$(this).val()){
+                $(this).val("站内搜索");
+            }
+        })
+        .on('focus', function(event) {
+            $(this).val("");
+        });;
+    });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul class="clear">
+                <li class="logo">
+                    <a href="../index.html"> </a>
+                </li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href=Cars.html>车型</a></li>
+                <li><a href="news.html">新闻</a></li>
+                <li><a href="service.html">售后服务</a></li>
+                <li><a href="contactUs.html">联系我们</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="s-in" value="站内搜索">
+            <input type="button" value="搜 索" id="s-button">
+        </div>
+    </div>
+    <div class="container">
+        <img src="../images/hero-website.jpg" alt="">
+        <h4>Levante--主要配置参数</h4>
+        <ul class="config clear">
+            <li><span class="distance">长度:</span>4957 毫米</li>
+            <li><span class="distance">宽度:</span> (不含后视镜)1725 毫米</li>
+            <li><span class="distance">宽度:</span>(含后视镜)2100 毫米</li>
+            <li><span class="distance">高度:</span>1461 毫米</li>
+            <li><span class="distance">轴距:</span>2988 毫米</li>
+            <li><span class="distance">前轮距:</span>1635 毫米</li>
+            <li><span class="distance">后轮距:</span>1653 毫米</li>
+            <li><span class="distance">排量:</span>2979 毫升</li>
+        </ul>
+        <h4>Levante--详细配置参数</h4>
+        <ul class="config clear">
+            <li><span class="distance">引擎布局</span>V6</li>
+            <li><span class="distance">排量:</span>2979毫升</li>
+            <li><span class="distance">压缩率:</span>9,7:1</li>
+            <li><span class="distance">最大功率:</span>410 马力</li>
+            <li><span class="distance">最大功率 (rpm):</span>5500 rpm</li>
+            <li><span class="distance">牵引力:</span>AWD</li>
+            <li><span class="distance">最大扭矩:</span>550 Nm</li>
+            <li><span class="distance">最大扭矩转速(rpm):</span>1750-5000</li>
+        </ul>
+        <div class="in clear">
+            <img src="../images/Levante-in-1.jpg" alt="">
+            <h5>纯正设计，优雅典范</h5>
+            <p>Levante线条唯美、气势磅礴，宛若蓄势一生、雕琢而成的波浪，诠释了玛莎拉蒂引以为傲的汽车设计精髓。Levante以经典设计缔造SUV领域的全新标杆。 </p>
+            <h5>极致非凡，激越人心</h5>
+            <p>Levante以富有现代感的设计语言，诠释了玛莎拉蒂卓越不凡的设计功力和精湛工艺，打造永无止境的探索乐趣。</p>
+        </div>
+        <div class="in clear">
+            <img src="../images/Levante-in-2.jpg" alt="">
+            <h5>奢华内饰，独特体验</h5>
+            <p>Levante的内饰精华一言难以蔽之，如同一场设计盛宴。从顶级装饰到高科技配件，Levante集中体现了玛莎拉蒂式的专属奢华体验。</p>
+            <h5>无惧路况，舒适如一</h5>
+            <p>Levante从内到外都引人入胜。超大内部空间和符合人体工程学设计的前排座椅完美包裹驾乘者，不论何种路面行驶，确保提供卓越支撑。</p>
+        </div>
+        <!--    <a href="#" onclick="submit()">立 即 预 约 试 驾</a>-->
+    </div>
+    <!--底部-->
+    <div class="childFooter">
+        <img src="../images/about-foot.png" alt="">
+    </div>
+    <!--底部-->
+</body>
+
+</html>

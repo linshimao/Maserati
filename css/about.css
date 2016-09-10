@@ -1,0 +1,42 @@
+* { margin: 0; padding: 0; }
+
+a { text-decoration: none; color: #fff; }
+
+ul { list-style-type: none; }
+
+body { padding-top: 50px; background: #F0F0F0; font-family: "MicroSoft YaHei"; }
+
+.clear { zoom: 1; }
+.clear:after { height: 0; visibility: hidden; content: ''; clear: both; display: block; }
+
+.header { position: fixed; z-index: 999; background: #333; width: 100%; min-width: 1000px; height: 50px; background: #333; margin-top: -50px; overflow: hidden; }
+.header .logo { background: url(../images/logo.png) center; background-size: cover; display: block; width: 82px; height: 36px; margin-top: 5px; margin-right: 50px; }
+.header input { margin-top: 15px; }
+.header .search { float: right; margin-right: 5em; }
+.header #s-in { width: 200px; height: 25px; line-height: 25px; border: none; background: #666; color: #b8b8b8; text-indent: 16px; outline: none; }
+.header #s-button { border: none; width: 65px; height: 25px; background: #225181; cursor: pointer; color: #c2c1c1; margin-left: -5px; }
+.header .nav { float: left; padding-left: 100px; }
+.header .nav li { float: left; }
+.header .nav li a { display: block; padding: 0 1em; text-align: center; height: 50px; line-height: 50px; color: #fff; font-size: 18px; }
+
+.childFooter { margin-top: 50px; height: 100px; background: #333; }
+.childFooter img { width: 100px; height: 100px; display: block; margin: 0 auto; margin-top: 30px; }
+
+body { background-color: #f9f9f9; }
+
+.content { position: relative; }
+
+.content-top { width: 100%; background: url(../images/content-top.jpg) center no-repeat; }
+.content-top h3 { left: 150px; font-size: 40px; color: #e2e0e0; font-weight: 400; font-family: "MicroSoft YaHei"; }
+.content-top p { left: 150px; color: #e2e0e0; font-size: 20px; font-weight: 400; }
+
+#wrapper { width: 1000px; margin: 0 auto; }
+#wrapper .contain { width: 100%; margin: 0 auto; padding-bottom: 30px; }
+#wrapper .contain h2 { font-size: 34px; font-weight: 400; color: #878282; }
+#wrapper .contain h2, #wrapper .contain p { padding-top: 40px; text-align: center; }
+#wrapper .contain h4 { text-indent: 2em; line-height: 1.5em; font-size: 18px; color: #666; font-weight: 400; padding-top: 15px; }
+#wrapper .contain img { margin-top: 20px; width: 100%; height: 600px; }
+#wrapper .about-info { margin-top: 30px; width: 100%; /*h4 { text-align: center; font-size: 20px;
+}
+h5 { text-indent: 2em; line-height: 2em; font-size: 18px;
+}*/ }

@@ -1,0 +1,61 @@
+@import "header";
+@import "childFooter";
+
+body {
+  background: #f9f9f9;
+}
+
+img {
+  border: none;
+}
+
+.contain {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 19px;
+  h2 {
+    text-align: center;
+    font-family: "Microsoft Yahei", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #333;
+    margin: 30px 0 30px 0;
+  }
+  .main-left {
+    width: 600px;
+    float: left;
+    img {
+      width: 100%;
+      height: 355px;
+    }
+  }
+  .main-right {
+    width: 340px;
+    float: right;
+    margin-left: 60px;
+    padding-top: 35px;
+    p {
+      font-size: 16px;
+      line-height: 2em;
+      letter-spacing: 1px;
+      color: #727777;
+      font-weight: 400;
+    }
+    .special-p {
+      margin-top: 30px;
+      margin-left: 20px;
+      font-size: 25px;
+    }
+  }
+}
+
+.clearfix {
+  _zoom: 1;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+}

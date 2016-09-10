@@ -2,71 +2,161 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="viewport" content="initial-scale=1,maximum-scale=1.0,user-scalable=no">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/jquery.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script>
+    $(function() {
+        var obP = $(".part2>div>p");
+        $("#s-button").on("click", function() {
+            if (!$("#s-in").val()) {
+                alert("搜索内容不能为空");
+                return false;
+            }
+            window.location.href = "pages/result.html";
+        });
+
+        $(".part2>div").on("mouseover", function() {
+            $(this).children(0).fadeIn();
+        });
+
+        $(".part2>div").on("mouseleave", function() {
+            $(this).children(0).fadeOut(500);
+        });
+        $("#s-in").on('blur', function(event) {
+            if(!$(this).val()){
+                $(this).val("站内搜索");
+            }
+        })
+        .on('focus', function(event) {
+            $(this).val("");
+        });;
+    });
+    </script>
 </head>
 
 <body>
-  <div class="header">
-    <a href=""><img src="images/logo.png" alt="logo" title="logo"></a>
-    <input type="button" value="搜 索" id="s-button">
-    <input type="text" id="s-in" placeholder="站内搜索">
-  </div>
-  <div class="scrollWall clear">
-    <div class="scrollbtn" id="prebtn"><i class="iconfont">&#xe612;</i></div>
-    <div class="scrollbtn" id="nextbtn"><i class="iconfont">&#xe613;</i></div>
-    <ul class="imgs clear">
-      <li id="s-img1"></li>
-      <li id="s-img2"></li>
-      <li id="s-img3"></li>
-      <li id="s-img4"></li>
-    </ul>
-  </div>
-  <ul class="nav">
-    <li><a href="">导航菜单</a></li>
-    <li><a href="">导航菜单</a></li>
-    <li><a href="">导航菜单</a></li>
-    <li><a href="">导航菜单</a></li>
-  </ul>
-  <div class="content">
-    <div class="part1 clear">
-      <img src="images/hero-website.png" alt="">
-      <div>
-        <h3>Levante —— 瞬间爆发，风驰电掣</h3>
-        <p>
-          优雅外观、宽敞的皮革座椅、敏锐的车载控制系统、卓越的动力性能，造就令人耳目一新的SUV之作。
+    <!-- 头部-->
+    <div class="header">
+        <div class="nav">
+            <ul class="clear">
+                <li class="logo">
+                    <a href="index.html"></a>
+                </li>
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="pages/Cars.html">车型</a>
+                </li>
+                <li>
+                    <a href="pages/news.html">新闻</a>
+                </li>
+                <li>
+                    <a href="pages/service.html">售后服务</a>
+                </li>
+                <li>
+                    <a href="pages/contactUs.html">联系我们</a>
+                </li>
+                <li>
+                    <a href="pages/about.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="s-in" value="站内搜索">
+            <input type="button" value="搜 索" id="s-button"></div>
+    </div>
+    <!--  头部-->
+    <!-- 轮播图-->
+    <div class="scrollWall clear">
+        <div class="scrollbtn" id="prebtn"> <i class="iconfont">&#xe612;</i>
+        </div>
+        <div class="scrollbtn" id="nextbtn"> <i class="iconfont">&#xe613;</i>
+        </div>
+        <ul class="imgs clear">
+            <li id="s-img1"></li>
+            <li id="s-img2"></li>
+            <li id="s-img3"></li>
+            <li id="s-img4"></li>
+        </ul>
+    </div>
+    <!--  轮播图-->
+    <!-- 主体-->
+    <div class="content">
+        <!--   主体第一部分-->
+        <div class="changeBackground">
+            <div class="part1 clear">
+                <img src="images/cars-1.jpg" alt="">
+                <div>
+                    <h3>Ghibli —— 精湛工艺,充沛动力</h3>
+                    <p>格调高雅、动力强劲，纵享动感操控与舒适驾乘,全新Ghibli车型，完美演绎玛莎拉蒂品牌精髓</p>
+                    <p>
+                        玛莎拉蒂Ghibli天生激越澎湃、震撼人心。简洁流畅的线条和饱满动感的外观出众夺目，激发无限想象。修长的发动机罩下蕴藏着强悍动力，前格栅设计和标志性三叉戟车标傲然彰显纯正的玛莎拉蒂血统,尖端的科技、顶级配置，定义全新奢华标准。
+                    </p>
+                    <a href="pages/Ghibli.html">了 解 更 多</a>
+                </div>
+            </div>
+            <!--    主体第一部分-->
+            <!--    主体第二部分-->
+            <div class="part1 clear">
+                <div>
+                    <h3>Levante —— 瞬间爆发，风驰电掣</h3>
+                    <p>优雅外观、宽敞的皮革座椅、敏锐的车载控制系统、卓越的动力性能，造就令人耳目一新的SUV之作。</p>
+                    <p>
+                        Levante完美体现玛莎拉蒂的设计特色，车身轮廓流畅动感，前翼子板上设有三个引人注目的标志性通风孔。硬朗的前格栅设计，尽显玛莎拉蒂百年传承的运动精髓，充满传奇色彩的三叉戟象征着玛莎拉蒂的专属尊荣、奢华精致和典雅风范。
+                    </p>
+                    <a href="pages/Ghibli.html">了 解 更 多</a>
+                </div>
+                <img src="images/hero-website.jpg" alt=""></div>
+        </div>
+        <!--    主体第二部分-->
+        <!--   主体第三部分--车型外观展示-->
+        <div class="changeBackground-2">
+            <div class="part2 clear">
+                <!--      <h3>外观展示</h3>
+            -->
+            <div class="cars  " id="dis_1">
+                <p><!-- <br>奢华享受、极致体验<br>运动风范、精湛工艺、充沛动力 --><a href="pages/Ghibli.html">Ghibli</a>
+                </p>
+            </div>
+            <div class="cars" id="dis_3">
+                <p><a href="pages/GranTurismo.html">GranTurismo</a></p>
+            </div>
+            <div class="cars-middle " id="dis_2">
+                <p><a href="pages/Levante.html">Levante</a></p>
+            </div>
+            <div class="cars " id="dis_4">
+                <p><a href="pages/GranCabrio.html">GranCabrio</a></p>
+            </div>
+            <div class="cars " id="dis_6">
+                <p>暂时缺货</p>
+            </div>
+            <div class="cars-middle " id="dis_5">
+                <p>暂时缺货</p>
+            </div>
+        </div>
+    </div>
+    <!--   主体第三部分--车型外观展示-->
+</div>
+<!--  主体-->
+<!-- 底部-->
+<div class="footer">
+    <div class="mark" style="text-align:center;color:#d8cdcd;padding-top:30px;">
+        <p style="font-size:1.5em;font-weight:800;padding-bottom:15px">匠所致，物有魂</p>
+        <p style="line-height:2em;">
+            倾注匠心于品牌，造就每个细节的极致。
+            <br />
+            从看到它到驾驶它，都能感受到人车合一的共鸣。
         </p>
-        <p>
-          Levante完美体现玛莎拉蒂的设计特色，车身轮廓流畅动感，前翼子板上设有三个引人注目的标志性通风孔。硬朗的前格栅设计，尽显玛莎拉蒂百年传承的运动精髓，充满传奇色彩的三叉戟象征着玛莎拉蒂的专属尊荣、奢华精致和典雅风范。
-        </p>
-        <a href="">了解更多</a>
-      </div>
+        <a href="pages/Cars.html" class="more">点 击 了 解 更 多</a>
     </div>
-    <div class="part2 clear">
-      <h3>整体外观展示</h3>
-      <div class="cars" id="dis_1"></div>
-      <div class="cars" id="dis_2"></div>
-      <div class="cars" id="dis_3"></div>
-      <div class="cars" id="dis_4"></div>
-      <div class="cars" id="dis_5"></div>
-      <div class="cars" id="dis_6"></div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="mark" style="text-align:center;color:#fff;padding-top:30px;">
-      <p style="font-size:1.5em;font-weight:800;padding-bottom:35px">匠所致，物有魂</p>
-      <p style="line-height:2em;">
-        倾注匠心于品牌，造就每个细节的极致。
-        <br /> 从看到它到驾驶它，都能感受到人车合一的共鸣。
-      </p>
-      <a href="" class="more">点击了解更多</a>
-    </div>
-  </div>
-  <script src="js/scrollImage.js"></script>
+</div>
+<!--  底部-->
+<script src="js/scrollImage.js"></script>
 </body>
 
 </html>

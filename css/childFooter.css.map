@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAa;EACX,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,IAAI;EAChB,gBAAI;IACF,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;IACb,OAAO,EAAE,KAAK;IACd,MAAM,EAAE,MAAM;IACd,UAAU,EAAE,IAAI",
+"sources": ["../sass/childFooter.scss"],
+"names": [],
+"file": "childFooter.css"
+}

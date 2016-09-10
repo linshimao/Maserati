@@ -5,9 +5,9 @@ $(function(){
         imgs = $(".imgs"),
         img = $(".imgs li"),
         LENGTH = img.length,
-        HEADER_HEIGHT=75,
+        HEADER_HEIGHT=50,
         index = 0,
-        time = 3000;
+        time = 5000;
     ;
     
     function init(){  

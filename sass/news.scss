@@ -1,0 +1,41 @@
+@import "header";
+@import "childFooter";
+body {
+    background: #F0F0F0;
+}
+
+.newBox {
+    width: 1000px;
+    margin: 50px auto 50px auto;
+    background: #fff;
+    height: 200px;
+    border: 2px solid #afadad;
+    padding: 20px 50px;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid #369;
+    }
+    h4 {
+        font-size: 23px;
+        text-indent: 2em;
+        margin-bottom: 1em;
+        color: #5e6666;
+        font-weight: 400;
+    }
+}
+
+.newsImg {
+    display: block;
+    float: left;
+    width:350px;
+}
+
+.newText {
+    text-indent: 4em;
+    padding-left: 2em;
+    line-height: 2em;
+    font-size: 14px;
+    width: 600px;
+    float: right;
+    color: #7c8181;
+}

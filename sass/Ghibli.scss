@@ -1,0 +1,66 @@
+@import "header";
+@import "childFooter";
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+    h4 {
+        font-size: 2em;
+        padding: 1em 0  1em 0;
+        color: #5f605e;
+        font-weight: 400;
+    }
+    .config {
+        width: 100%;
+        margin: 0 auto;
+        color: #868787;
+        li {
+            width: 220px;
+            height: 35px;
+            line-height: 35px;
+            border-bottom: 1px dotted #ccc;
+            float: left;
+            padding-left: 2em;
+            font-size: 12px;
+        }
+        .distance {
+            color: #918986;
+            padding-right: .5em;
+            font-size: 16px;
+        }
+    }
+    a {
+        display: block;
+        width: 200px;
+        height: 50px;
+        background: #C43E3E;
+        color: aliceblue;
+        line-height: 50px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 4em;
+    }
+    .in {
+        margin-top: 30px;
+        h5 {
+            color: #3b3737;
+            font-weight: 300;
+            font-size: 20px;
+            margin-top: 8px;
+        }
+        img {
+            width: 40%;
+            display: block;
+            float: left;
+            padding-right: 2em;
+        }
+        p {
+            padding-top: 5px;
+            text-indent: 2em;
+            line-height: 2em;
+            color: #8e9091;
+        }
+    }
+}
