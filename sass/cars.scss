@@ -1,0 +1,55 @@
+@import "header";
+
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;position: relative;}
+#car_1{
+    background: url("../images/cars-1.jpg") center;
+    background-size: cover;
+}
+#car_2{
+    background: url("../images/cars-2.jpg") center;
+    background-size: cover;
+}
+#car_3{
+    background: url("../images/cars-3.jpg") center;
+    background-size: cover;
+}
+#car_4{
+    background: url("../images/120550M.jpg") center;
+    background-size: cover;
+}
+
+.title{
+    font-size: 0.6em;
+    position: absolute;
+    bottom: 6em;
+    left: 2em;
+        color: #362f2f;
+    font-weight: 400;
+}
+
+.tips{
+    font-size: 0.3em;
+    position: absolute;
+    bottom: 10em;
+    left: 4em;
+    color: #232224;
+    letter-spacing: 2px;
+}
+.learn{
+    display: block;
+    position: absolute;
+    right: 5em;
+    bottom: 10em;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: .3em;
+    padding: 5px 1em;
+    color: #fff;
+    text-decoration: none;
+    background: #3879D9;
+    &:hover{
+        background: #369;
+    }
+    
+}

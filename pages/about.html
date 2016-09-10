@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="../js/jquery.js"></script>
+    <script>
+    $(function() {
+        $("#s-button").on("click", function() {
+            if (!$("#s-in").val()) {
+                alert("搜索内容不能为空");
+                return false;
+            }
+            window.location.href = "result.html";
+        });
+        $("#s-in").on('blur', function(event) {
+            if(!$(this).val()){
+                $(this).val("站内搜索");
+            }
+        })
+        .on('focus', function(event) {
+            $(this).val("");
+        });;
+    });
+    </script>
+</head>
+
+<body>
+    <!-- 头部-->
+    <div class="header">
+        <div class="nav">
+            <ul class="clear">
+                <li class="logo">
+                    <a href="../index.html"></a>
+                </li>
+                <li>
+                    <a href="../index.html">首页</a>
+                </li>
+                <li>
+                    <a href=Cars.html>车型</a>
+                </li>
+                <li>
+                    <a href="news.html">新闻</a>
+                </li>
+                <li>
+                    <a href="service.html">售后服务</a>
+                </li>
+                <li>
+                    <a href="contactUs.html">联系我们</a>
+                </li>
+                <li>
+                    <a href="about.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="s-in" value="站内搜索">
+            <input type="button" value="搜 索" id="s-button">
+        </div>
+    </div>
+    <!--  头部-->
+    <!--页头照片展示-->
+    <div class="content-top">
+        <!--<h3>我们的传奇历史</h3>
+  <p>始于1914年</p>
+  -->
+    </div>
+    <!--页头照片展示-->
+    <!--  主体内容-->
+    <div id="wrapper">
+        <div class="contain">
+            <h2>早期岁月</h2>
+            <img src="../images/cont-info-1.jpg" alt="">
+            <h4>
+      1914年12月1日，玛莎拉蒂兄弟在博洛尼亚创办玛莎拉蒂公司，此后便在全球汽车史上盛名不衰。最初，这只是设在博洛尼亚德·佩波利大街1号的一间工作车间，一战爆发后，玛莎拉蒂兄弟开始自行设计汽车。
+    </h4>
+            <h2>梦想启航</h2>
+            <img src=" ../images/cont-info-2.jpg" alt="">
+            <h4>
+      20世纪初，发动机的性能仍不稳定，故障主要源自发动机的电气系统。1907年，卡洛－玛莎拉蒂通过调整比安奇电气系统的电压，解决了燃烧室内点火失败的问题。这极大提高了发动机工作的稳定性，使发动机性能更出色，功率输出更持久。
+    </h4>
+            <h2>享誉世界</h2>
+            <img src="../images/cont-info-3.jpg" alt="">
+            <h4>
+      1956年的F1大奖赛成为意大利摩德纳两大汽车品牌——法拉利和玛莎拉蒂争夺荣耀的战场。当时，摩德纳市民分为两派，一派支持法拉利，一派支持玛莎拉蒂，旗鼓相当。每逢周日，赛车在赛道上摆开架势，激烈对决。星期一上午，获胜队的支持者在市中心的酒吧里或柱廊下得意洋洋地取笑失败者。
+    </h4>
+            <!--<div class="about-info">
+    <h4>1900年－流淌在家族血液中的激情</h4>
+    <h5>
+      玛莎拉蒂的传奇故事始于意大利王国时期的一名普通铁路工人罗德夫-玛莎拉蒂 (Rodolfo Maserati) ，以及他的妻子卡洛琳娜-罗西 (Carolina Losi)和七个孩子。罗德夫颇具创新远见，玛莎拉蒂兄弟也从他那儿继承了对速度的热爱。1894年，新世纪来临之际，罗德夫最小的儿子埃多勒出生，此时年仅13岁的长子卡洛已经开启了自己的一番事业。
+    </h5>
+    <h4>1903年－卡洛-玛莎拉蒂：志存高远</h4>
+    <h5>
+      卡洛-玛莎拉蒂于1903年离开菲亚特，转投伊索塔-弗拉西尼公司 (Isotta Fraschini)，在测试中心担任试驾员和助理。在他的引荐下，当时年仅16岁的弟弟阿尔菲力也进入伊索塔工作。1908年，卡洛离开伊索塔-弗拉西尼，阿尔菲力仍然留在公司。同年，阿尔菲力驾驶伊索塔-弗拉西尼41号赛车参加了在法国迪耶普举行的小型车大奖赛，获得第14名，在四缸车中名列第一。
+    </h5>
+    <h4>1913年－阿尔菲力的首个工作车间</h4>
+    <h5>
+      1913年12月1日，阿尔菲力搬到博洛尼亚，在此成立了伊索塔-弗拉西尼服务中心。但不久后，他决定跟随卡洛的脚步，离开伊索塔自立门户，和兄弟们一起开展新的事业。他们在一间带工作车间的车库里成立了阿尔菲力-玛莎拉蒂车间股份公司，地址位于德-佩波利大街一号。五个月后，意大利卷入战火中。阿尔菲力和埃多勒应征入伍。
+    </h5>
+  </div>
+  -->
+        </div>
+    </div>
+    <!--  主体内容-->
+    <!--  底部-->
+    <div class="childFooter">
+        <img src="../images/about-foot.png" alt=""></div>
+    <!--  底部-->
+</body>
+
+</html>

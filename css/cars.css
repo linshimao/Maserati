@@ -1,0 +1,37 @@
+* { margin: 0; padding: 0; }
+
+a { text-decoration: none; color: #fff; }
+
+ul { list-style-type: none; }
+
+body { padding-top: 50px; background: #F0F0F0; font-family: "MicroSoft YaHei"; }
+
+.clear { zoom: 1; }
+.clear:after { height: 0; visibility: hidden; content: ''; clear: both; display: block; }
+
+.header { position: fixed; z-index: 999; background: #333; width: 100%; min-width: 1000px; height: 50px; background: #333; margin-top: -50px; overflow: hidden; }
+.header .logo { background: url(../images/logo.png) center; background-size: cover; display: block; width: 82px; height: 36px; margin-top: 5px; margin-right: 50px; }
+.header input { margin-top: 15px; }
+.header .search { float: right; margin-right: 5em; }
+.header #s-in { width: 200px; height: 25px; line-height: 25px; border: none; background: #666; color: #b8b8b8; text-indent: 16px; outline: none; }
+.header #s-button { border: none; width: 65px; height: 25px; background: #225181; cursor: pointer; color: #c2c1c1; margin-left: -5px; }
+.header .nav { float: left; padding-left: 100px; }
+.header .nav li { float: left; }
+.header .nav li a { display: block; padding: 0 1em; text-align: center; height: 50px; line-height: 50px; color: #fff; font-size: 18px; }
+
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff; position: relative; }
+
+#car_1 { background: url("../images/cars-1.jpg") center; background-size: cover; }
+
+#car_2 { background: url("../images/cars-2.jpg") center; background-size: cover; }
+
+#car_3 { background: url("../images/cars-3.jpg") center; background-size: cover; }
+
+#car_4 { background: url("../images/120550M.jpg") center; background-size: cover; }
+
+.title { font-size: 0.6em; position: absolute; bottom: 6em; left: 2em; color: #362f2f; font-weight: 400; }
+
+.tips { font-size: 0.3em; position: absolute; bottom: 10em; left: 4em; color: #232224; letter-spacing: 2px; }
+
+.learn { display: block; position: absolute; right: 5em; bottom: 10em; width: 100px; height: 35px; line-height: 35px; font-size: .3em; padding: 5px 1em; color: #fff; text-decoration: none; background: #3879D9; }
+.learn:hover { background: #369; }

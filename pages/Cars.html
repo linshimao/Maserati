@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="../css/Cars.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/fullpage.min.js"></script>
+    <script>
+    $(function() {
+        $('#dowebok').fullpage({
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+            'navigation': true,
+        });
+
+        $("#s-button").on("click", function() {
+            if (!$("#s-in").val()) {
+                alert("搜索内容不能为空");
+                return false;
+            }
+            window.location.href = "result.html";
+        });
+        $("#s-in").on('blur', function(event) {
+            if(!$(this).val()){
+                $(this).val("站内搜索");
+            }
+        })
+        .on('focus', function(event) {
+            $(this).val("");
+        });;
+    });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul class="clear">
+                <li class="logo">
+                    <a href="../index.html"></a>
+                </li>
+                <li>
+                    <a href="../index.html">首页</a>
+                </li>
+                <li>
+                    <a href=Cars.html>车型</a>
+                </li>
+                <li>
+                    <a href="news.html">新闻</a>
+                </li>
+                <li>
+                    <a href="service.html">售后服务</a>
+                </li>
+                <li>
+                    <a href="contactUs.html">联系我们</a>
+                </li>
+                <li>
+                    <a href="about.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="s-in" value="站内搜索">
+            <input type="button" value="搜 索" id="s-button">
+        </div>
+    </div>
+    <div id="dowebok">
+        <div class="section" id="car_1">
+            <h4 class="title">Ghibli轿车系列</h4>
+            <p class="tips"">卓尔不凡</p>
+            <a href="Ghibli.html " class="learn ">车型详情…</a>
+        </div>
+        <div class="section " id="car_2">
+            <h4 class="title ">Levante</h4>
+            <p class="tips ">The Maserati of SUVs</p>
+            <a href="Levante.html" class="learn ">车型详情…</a>
+        </div>
+        <div class="section " id="car_3">
+            <h4 class="title ">GranTurismo跑车系列</h4>
+            <p class="tips ">意式激情的完美演绎</p>
+            <a href="GranTurismo.html" class="learn ">车型详情…</a>
+        </div>
+        <div class="section " id="car_4">
+            <h4 class="title ">GranCabrio敞篷跑车系列</h4>
+            <p class="tips ">随心所“驭”，自由驰骋</p>
+            <a href="GranCabrio.html" class="learn">车型详情…</a>
+        </div>
+    </div>
+</body>
+
+</html>

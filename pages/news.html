@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+    <link rel="stylesheet" href="../css/news.css">
+    <script src="../js/jquery.js"></script>
+    <script>
+    $(function() {
+        $("#s-button").on("click", function() {
+            if (!$("#s-in").val()) {
+                alert("搜索内容不能为空");
+                return false;
+            }
+            window.location.href = "result.html";
+        });
+        $("#s-in").on('blur', function(event) {
+            if(!$(this).val()){
+                $(this).val("站内搜索");
+            }
+        })
+        .on('focus', function(event) {
+            $(this).val("");
+        });;
+    });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul class="clear">
+                <li class="logo">
+                    <a href="../index.html"></a>
+                </li>
+                <li>
+                    <a href="../index.html">首页</a>
+                </li>
+                <li>
+                    <a href=Cars.html>车型</a>
+                </li>
+                <li>
+                    <a href="news.html">新闻</a>
+                </li>
+                <li>
+                    <a href="service.html">售后服务</a>
+                </li>
+                <li>
+                    <a href="contactUs.html">联系我们</a>
+                </li>
+                <li>
+                    <a href="about.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="s-in" value="站内搜索">
+            <input type="button" value="搜 索" id="s-button">
+        </div>
+    </div>
+    <div class="container">
+        <div class="newBox">
+            <img src="../images/sx.jpg" alt="" class="newsImg">
+            <h4>玛莎拉蒂LEVANTE于北京车展完成在华首秀</h4>
+            <p class="newText">
+                玛莎拉蒂携百年历史上首款SUV Levante亮相第14届北京国际汽车展览会，并正式公布Levante S车型（430匹马力版本）在中国地区官方售价：人民币147.8万元起。Levante车型（350匹马力版本）的售价已于今年3月在与阿里巴巴集团的战略合作签约仪式上公布，同期启动天猫旗舰店的预售，售价为人民币99.98万元起。
+            </p>
+        </div>
+        <div class="newBox">
+            <img src="../images/tjh.jpg" alt="" class="newsImg">
+            <h4>玛莎拉蒂中国大客户业务推荐函</h4>
+            <p class="newText">
+                玛莎拉蒂出身于意大利跑车世家，是一个独一无二的经典豪华汽车品牌。自创立一个世纪以来，玛莎拉蒂始终致力于打造兼具运动性能，顶级品质，舒适体验，奢华内饰和优雅线条完美结合的非凡座驾。旗下QP总裁轿车，Ghibli轿车，GT跑车，GC敞篷跑车传承意大利经典设计和手工定制传统，完美诠释着优雅，奢华，运动和激情。
+            </p>
+        </div>
+        <div class="newBox">
+            <img src="../images/rnw.jpg" alt="" class="newsImg">
+            <h4>玛莎拉蒂史上首款SUV在万众期待中现身日内瓦</h4>
+            <p class="newText">
+                在第86届日内瓦国际车展上，玛莎拉蒂正式发布了其百年历史上的首款SUV车型：Levante。与玛莎拉蒂以往的众多车型一样，Levante名字的灵感同样来源于“风”：Levante，一股善变多面的地中海暖风，可以从拂面的微风瞬间爆发为强劲的狂风。以此命名的第一款玛莎拉蒂SUV车型具备同样的气质和特点。
+            </p>
+        </div>
+        <div class="newBox">
+            <img src="../images/T4.jpg" alt="" class="newsImg">
+            <h4>玛莎拉蒂中国首批官方认证总技师诞生</h4>
+            <p class="newText">
+                作为全球顶级的豪华车品牌，玛莎拉蒂如今在全球已有接近400家授权维修服务网点，共计千余名认证维修技师致力于为全球玛莎拉蒂车主提供尊崇服务。在这些认证维修技师中，有一群“神一般的存在”——玛莎拉蒂总技师。目前全球仅有17名技师通过了玛莎拉蒂全球总技师认证考核。
+            </p>
+        </div>
+        <p class="newText"></p>
+        <div class="newBox">
+            <img src="../images/jnb.jpg" alt="" class="newsImg">
+            <h4>玛莎拉蒂履行“百万植树计划”</h4>
+            <p class="newText">
+                近日，玛莎拉蒂中国携手上海根与芽，邀请玛莎拉蒂中国员工、经销商伙伴、媒体及其家庭成员组成一支玛莎拉蒂亲子夏令营植树队伍，在被沙漠日益侵蚀的内蒙古通辽市科尔沁左翼后旗（巴嘎塔拉苏木边界嘎查）安营扎寨，亲手播种樟子松树苗，为改善当地环境尽绵薄之力，履行长期支持的“百万植树计划”。
+            </p>
+        </div>
+        <div class="newBox">
+            <img src="../images/msldh.jpg" alt="" class="newsImg">
+            <h4>“玛莎拉蒂号”首抵中国大陆</h4>
+            <p class="newText">
+                6月初，意大利航海家吉奥瓦尼•索迪尼领航“玛莎拉蒂号”帆船及全体船员从美国旧金山启程，历经21天19小时32分54秒抵达中国上海，刷新该航线单体帆船航行时间新记录，堪称史诗般的冒险之旅！这也是“玛莎拉蒂号” 首次亮相中国大陆。6月18日，索迪尼船长率领“玛莎拉蒂号”及部分船员抵达“帆船之都”青岛，并在此由玛莎拉蒂为中国消费者和媒体嘉宾呈现一场专属意式海陆超凡体验。
+            </p>
+        </div>
+    </div>
+    <div class="childFooter">
+        <img src="../images/about-foot.png" alt=""></div>
+</body>
+
+</html>

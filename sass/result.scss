@@ -1,0 +1,22 @@
+@import "header";
+@import "childFooter";
+
+.container{
+    margin-top: 5em;
+    p{
+        width: 329px;
+        margin: 0 auto;
+        font-size: 17px;
+        line-height: 3em;
+    }
+    .error{
+        font-size: 200px;
+        height: 200px;
+        line-height: 200px;
+        display: block;
+        text-align: center;
+    }
+    .back{
+        color: orangered;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="../css/contactus.css">
+    <script src="../js/jquery.js"></script>
+    <script>
+    $(function() {
+        $("#s-button").on("click", function() {
+            if (!$("#s-in").val()) {
+                alert("搜索内容不能为空");
+                return false;
+            }
+            window.location.href = "result.html";
+        });
+        $("#s-in").on('blur', function(event) {
+            if(!$(this).val()){
+                $(this).val("站内搜索");
+            }
+        })
+        .on('focus', function(event) {
+            $(this).val("");
+        });;
+    });
+    </script>
+</head>
+
+<body>
+    <!-- 头部-->
+    <div class="header">
+        <div class="nav">
+            <ul class="clear">
+                <li class="logo">
+                    <a href="../index.html"></a>
+                </li>
+                <li>
+                    <a href="../index.html">首页</a>
+                </li>
+                <li>
+                    <a href=Cars.html>车型</a>
+                </li>
+                <li>
+                    <a href="news.html">新闻</a>
+                </li>
+                <li>
+                    <a href="service.html">售后服务</a>
+                </li>
+                <li>
+                    <a href="contactUs.html">联系我们</a>
+                </li>
+                <li>
+                    <a href="about.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="s-in" value="站内搜索">
+            <input type="button" value="搜 索" id="s-button">
+        </div>
+    </div>
+    <!--  头部-->
+    <!--  主体-->
+    <div class="contain clearfix">
+        <h2>联系我们</h2>
+        <div class="main-left">
+            <img src="../images/contactUs.jpg" alt=""></div>
+        <div class="main-right">
+            <p>您可通过三种方式与我们联系：</p>
+            <p>您可添加我们的微信公众号，给我们留言</p>
+            <p>您可以拨打我们的热线电话1111111111</p>
+            <p>您还可以通过微博XXXXXXXXX与我们联系</p>
+            <p class="special-p">我们竭诚为您服务！</p>
+        </div>
+    </div>
+    <!--  主体-->
+    <!--  底部-->
+    <div class="childFooter">
+        <img src="../images/about-foot.png" alt=""></div>
+    <!--  底部-->
+</body>
+
+</html>
